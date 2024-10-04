@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+</head>
+<body>
+
+    <header class="header">
+        <a href="#home" class="logo">Portfolio</a>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div class="menu-toggle">
+            <i class="bx bx-menu"></i>
+        </div>
+    </header>
+    
+    <section id="home" class="home">
+        <div class="home-container">
+            <div class="home-content">
+                <h3 style="font-size: large;font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Hello, It's Me</h3>
+                <h1 class="animated-text">Abhishek Singh</h1>
+                <h3 style="color: burlywood;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">And I'm a <span class="text"></span></h3>
+                <p class="fade-in">I'm a web developer with a learning attitude and aspiring opportunities. Interest in development, exploring things, and much more.</p>
+
+                <div class="home-sci">
+                    <a href="https://www.linkedin.com/in/abhishek-singh-5ab12a243/" target="_blank">
+                        <i class='bx bxl-linkedin'></i>
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=100018344317257" target="_blank">
+                        <i class='bx bxl-facebook'></i>
+                    </a>
+                    <a href="https://www.instagram.com/__abhishek.08__/"target="_blank">
+                        <i class='bx bxl-instagram'></i>
+                    </a>
+                    <a href="https://github.com/abhishek-singh08" target="_blank">
+                        <i class='bx bxl-github'></i>
+                    </a>
+
+                </div>
+                
+                
+                <a href="#about" class="btn-box">More About Me</a>
+            </div>
+            <div class="profile-image-container">
+                <img src="./media/Profile Image.jpeg" alt="Profile Image" class="profile-image bounce-in">
+            </div>
+        </div>
+    </section>
+    
+    
+    
+    <section id="about" class="about-section">
+        <div class="about-content">
+            <div class="profile-pic">
+                <img src="./media/Proff Image.jpeg" alt="Your Profile Picture">
+            </div>
+            <div class="about-text">
+                <h2 style="font-size: 40px;color: blueviolet;">About Me</h2>
+                <p style="font-size: large;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">I’m a passionate web developer interested in creating modern, responsive, and user-friendly websites. I enjoy learning new technologies and exploring different fields within web development.</p>
+
+<h4>Education:</h4>
+<ul class="education-list">
+    <li class="main-item" style="font-size: 20px;color:indigo;">B.Tech, Computer Science (CGPA - 9.0)
+        <ul class="sub-list">
+            <li>University: Shri Ramswaroop Memorial University, Lucknow</li>
+            <li>Year: 2024</li>
+            <li>Specialization : Machine Learning</li>
+        </ul>
+    </li>
+    <li class="main-item"style="font-size: 20px;color:indigo;">Intermediate (CBSE - 90 %)
+        <ul class="sub-list">
+            <li>School: Central Academy, Lucknow</li>
+            <li>Year: 2019</li>
+            <li>Stream: Science (PCM)</li>
+        </ul>
+    </li>
+    <li class="main-item" style="font-size: 20px;color:indigo;">Matric (CBSE - 10.0 CGPA)
+        <ul class="sub-list">
+            <li>School: P N National Public School, Gorakhpur</li>
+            <li>Year: 2017</li>
+        </ul>
+    </li>
+</ul>
+            </div>
+        </div>
+    </section>
+    
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h2 class="section-title" style="margin-bottom: 10px;">Skills</h2>
+            <div class="skills-grid">
+
+                <div class="skill-card">
+                    <div class="icon"><i class="fas fa-code"></i></div>
+                    <h3>Frontend Development</h3>
+                    <p>HTML, CSS, JavaScript, React.js</p>
+                </div>
+                <div class="skill-card">
+                    <div class="icon"><i class="fas fa-code"></i></div>
+                    <h3>Backend Development</h3>
+                    <p>NodeJs,Express.js</p>
+                </div>
+                <div class="skill-card">
+                    <div class="icon"><i class="fas fa-database"></i></div>
+                    <h3>Databases</h3>
+                    <p>MySQL, SQL Server</p>
+                </div>
+                <div class="skill-card">
+                    <div class="icon"><i class="fas fa-code"></i></div>
+                    <h3>Programming Languages</h3>
+                    <p>Java, C</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-titles">Contact Me</h2>
+            <p class="section-description">I'd love to hear from you! Feel free to reach out.</p>
+            <div class="contact-content">
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="contact-btn">Send Message</button>
+                </form>
+                <div class="contact-info">
+                    <p><strong>Email:</strong> abhisheksingh08102001@gmail.com</p>
+                    <p><strong>Phone:</strong> +91 8840467697</p>
+                    <p><strong>Location:</strong> Lucknow, UP (India) </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script src="main.js"></script>
+</body>
+</html>
